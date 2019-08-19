@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh 'env'
                 sh 'ls -lha $(pwd)'
+                sh 'git --version'
             }
         }
         stage('Test') {
