@@ -6,6 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'env'
+                sh 'ls -lha $(pwd)'
             }
         }
         stage('Test') {
