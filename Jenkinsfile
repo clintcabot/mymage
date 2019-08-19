@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        docker { image 'debian:buster-slim' }
-    }
+    agent { dockerfile true }
     stages {
         stage('Build') {
             steps {
